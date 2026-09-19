@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .no-print,
+  button,
+  header,
+  footer,
+  .print-hidden {
+    display: none !important;
+  }
+
+  /* Make containers clean for paper/PDF */
+  .shadow-sm,
+  .shadow-md,
+  .shadow-lg,
+  .shadow-xl,
+  .shadow-2xl {
+    box-shadow: none !important;
+    border: 1px solid #cbd5e1 !important;
+  }
+
+  .page-break-inside-avoid,
+  .rounded-2xl,
+  .rounded-3xl {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .recharts-responsive-container {
+    width: 100% !important;
+    min-height: 280px !important;
+  }
+
+  /* Watermark header for printed PDF */
+  .print-header-watermark {
+    display: block !important;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #4f46e5;
+  }
+}
+
+.print-header-watermark {
+  display: none;
+}

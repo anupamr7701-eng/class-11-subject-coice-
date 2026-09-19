@@ -1,0 +1,8 @@
+{
+  "name": "ক্যারিয়ার ও স্ট্রিম গাইড (Career Stream Evaluator)",
+  "description": "অনুপম রায় দ্বারা তৈরি - এআই (AI) যুগে সায়েন্স (Science), কমার্স (Commerce) ও আর্টস (Arts) স্ট্রিম (Stream) নির্বাচনের পূর্ণাঙ্গ মূল্যায়ন ও তাৎক্ষণিক ফলাফল ড্যাশবোর্ড (Dashboard)",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
